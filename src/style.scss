@@ -1,0 +1,65 @@
+$primary: #84754e;
+$secondary: #f4f4f4;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+ul {
+  list-style: none;
+}
+
+.section__intro,
+.section__feature {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://pixfort.com/items/1/images/real_estate/intro-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.section__intro .container-md {
+  height: 100%;
+}
+
+@media (max-width: 993px) {
+  .section__intro {
+    height: 100%;
+  }
+  .logo__container {
+    width: 150px;
+  }
+}
+
+footer {
+  background-color: #444444;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.pointer:hover {
+  color: $primary !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: $primary;
+}
+
+.nav-link.active {
+  color: $primary;
+  font-weight: bolder;
+}
